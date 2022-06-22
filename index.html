@@ -1,0 +1,268 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SAVENATURE</title>
+    <link rel="shortcut icon" href="{% static  'assets/images/fav.png' %}" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'assets/images/fav.jpg' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{%static 'assets/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/all.min.css' %}">
+    <link rel="stylesheet" href=" {% static 'assets/plugins/slider/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{%static 'assets/plugins/slider/css/owl.theme.default.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}"/>
+</head>
+
+<body>
+
+    <!-- ################# Slider Starts Here#######################--->
+
+    <header class="continer-fluid ">
+        
+        <div id="menu-jk" class="header-bottom">
+            <div class="container">
+                <div class="row nav-row">
+                    <div class="col-lg-3 col-md-12 logo">
+                        <a href="index.html">
+                            <img src="{% static 'assets/images/logo.png' %}" alt="">
+                        </a>
+
+                    </div>
+                    <div class="col-lg-1 col-md-10 nav-col">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+
+                            <button
+                                    class="navbar-toggler"
+                                    type="button"
+                                    data-toggle="collapse"
+                                    data-target="#navbarNav"
+                                    aria-controls="navbarNav"
+                                    aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                            
+                                <a class="nav-btn" href="{% url 'payment' %} ">
+                                    <button class="btn btn-success">Donate Now</button>
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ################# Slider Starts Here#######################--->
+
+    <div class="slider">
+        <!-- Set up your HTML -->
+        <div class="owl-carousel ">
+            <div class="slider-img">
+                <div class="item">
+                    <div class="slider-img"><img src="{% static 'assets/images/slider/slider-3.jpg' %}" alt=""></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+                                <div class="animated bounceInDown slider-captions">
+                                    <h1 class="slider-title">We Plant More than 10,000 Trees</h1>
+                                    <p class="slider-text hidden-xs">Many forests have been lost, and deforestation is accelerating and regularly setting new records. Since its founding, Klorane Botanical Foundation has also been committed to protecting water.
+Our foundation, in collaboration with many international institutions, has planted and saved thousands of trees to preserve water, soil and biodiversity. </p>
+                                    <a href="{% url 'payment' %}" class="btn btn-success hidden-xs">Plant a Tree </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slider-img"><img src="{% static 'assets/images/slider/slider-1.jpg' %}" alt=""></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+                            <div class="slider-captions ">
+                                <h1 class="slider-title">It's time for better help.</h1>
+                                <p class="slider-text hidden-xs">80% of the original forests have been cut down or damaged.
+Humans destroy tens of millions of hectares of forest each year.
+Most major cities in developing countries depend on forests for their water. </p>
+
+                                <a href="{% url 'payment' %}" class="btn btn-success hidden-xs">Donate us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slider-img"><img src="{% static 'assets/images/slider/slider-2.jpg' %}" alt=""></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+                            <div class="slider-captions ">
+                                <h1 class="slider-title">Save the Nature with Us</h1>
+                                <p class="slider-text hidden-xs">To protect endangered plants,
+Explore botanical treasures,
+And share our passion for botany as widely as possible, especially with children.</p>
+
+                                <a href="{% url 'payment' %}" class="btn btn-success hidden-xs">Donate us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ################# Slider Starts Here#######################--->
+
+    
+
+    <!-- #################  LookingFor #######################--->
+
+
+
+    <div class="our-services container-fluid">
+        <div class="container">
+            <div class="row session-title">
+                <h2>What Are We Doing ?</h2>
+                <p>We want to make it simple for anyone to help the environment by planting trees. Together we can restore forests, create habitat for biodiversity, and make a positive social impact around the world.</p>
+            </div>
+            <div class="service-row row">
+                <div class="col-md-4">
+                    <div class="service-col">
+                        <img src="{% static 'assets/images/service/s7.jpg' %}" alt="">
+                        <div class="serv-detail">
+                            <i class="fab fa-pagelines"></i>
+                            <h4>Planting New Trees</h4>
+                            <p>We plant one tree with every dollar donated..</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service-col">
+                        <img src="{% static 'assets/images/service/s6.jpg' %}" alt="">
+                        <div class="serv-detail">
+                            <i class="fas fa-seedling"></i>
+                            <h4>Eco-friendly</h4>
+                            <p>We have planted over 40 million trees in more than 43 countries across the globe since 2014. In 2021, we more than doubled our impact from 2020 - with 23.5 million trees!.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service-col">
+                        <img src="{% static 'assets/images/service/s5.jpg' %}" alt="">
+                        <div class="serv-detail">
+                            <i class="fas fa-tint"></i>
+                            <h4>Generate Water Source</h4>
+                            <p>All over the world, pioneers are working. With us, they are planting the trees that will save them in the future. Why trees? Because it’s forests that give us our water.
+
+Forests have a special power: they help the ground retain water. Thus, most of the accessible fresh water is provided by underground reserves that are supplied by forests. This is one of the steps in the water cycle. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  ************************* Blog Starts Here ************************** -->
+    
+
+    <!-- ######## Blog End ####### -->
+
+    <!--  ************************* Testimonial  Starts Here ************************** -->
+
+    
+    <!--  ************************* Footer  Starts Here ************************** -->
+   
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col about">
+                    <h2>About Us</h2>
+                    <p>Since our establishment, we have been dedicated to making it easier for both individuals and businesses to give back to the environment, create a healthier climate, protect biodiversity, and help reforestation efforts.
+
+With your support, we aid in environmental conservation and restoration across the globe! </p>
+
+                    <div class="foot-address">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="addet">
+                            Hyderabad,
+                            Medchal District,
+                            Telangana, IND
+                        </div>
+                    </div>
+                    <div class="foot-address">
+                        <div class="icon">
+                            <i class="far fa-envelope-open"></i>
+                        </div>
+                        <div class="addet">
+                            karthikvaddi14@gmail.com <br>
+
+                        </div>
+                    </div>
+                    <div class="foot-address">
+                        <div class="icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="addet">
+                            +917396450288 <br>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col glink">
+                       <div class="container">
+            <a href="https://www.smarteyeapps.com/">2022 &copy; All Rights Reserved | Designed and Developed by karthikvaddi</a>
+
+            <span>
+                <a><i class="fab fa-github"></i></a>
+                <a><i class="fab fa-google-plus-g"></i></a>
+                <a><i class="fab fa-pinterest-p"></i></a>
+                <a><i class="fab fa-twitter"></i></a>
+                <a><i class="fab fa-facebook-f"></i></a>
+        </span>
+        </div>
+
+    </div>
+                  
+                </div>
+               
+            </div>
+        </div>
+
+    </footer>
+    <div class="copy">
+        <div class="container">
+            <a href="https://www.smarteyeapps.com/">2022 &copy; All Rights Reserved | Designed and Developed by karthikvaddi</a>
+
+            <span>
+                <a><i class="fab fa-github"></i></a>
+                <a><i class="fab fa-google-plus-g"></i></a>
+                <a><i class="fab fa-pinterest-p"></i></a>
+                <a><i class="fab fa-twitter"></i></a>
+                <a><i class="fab fa-facebook-f"></i></a>
+        </span>
+        </div>
+
+    </div>
+
+</body>
+
+    <script src="{% static 'assets/js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/plugins/slider/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static  'assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js' %}"></script>
+    <script src="{% static 'assets/js/script.js' %}"></script>
+</html>
