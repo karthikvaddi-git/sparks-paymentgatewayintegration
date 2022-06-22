@@ -22,7 +22,7 @@ Integrating razorpay payment gateway in my project to accept online transactions
 Install my-project with pip install
 
 ```bash
-  git clone https://github.com/karthikvaddi-git/razorpayintegration.git
+  git clone https://github.com/karthikvaddi-git/sparks-paymentgatewayintegration.git
   pip install -r requirements.txt
 ```
     
